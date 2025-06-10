@@ -15,6 +15,7 @@ import DoctorMedicalReports from "./page/doctor/DoctorMedicalReports"
 import DoctorPrescriptions from "./page/doctor/DoctorPrescriptions"
 import DoctorLabTests from "./page/doctor/DoctorLabTests"
 import PatientLabTest from "./page/patient/PatientLabTest"
+import Chat from "./page/Chat"
 
 function App() {
   return (
@@ -47,7 +48,10 @@ function App() {
           <Route path="/doctor/lab-tests" element={<DoctorLabTests />} />
 
           {/* Redirect các route không tồn tại về trang chủ */}
+
           <Route path="*" element={<Navigate to="/" replace />} />
+          {/* Chatbot */}
+          <Route path="/chat" element={<Chat />} />
         </Routes>
       </div>
     </Router>

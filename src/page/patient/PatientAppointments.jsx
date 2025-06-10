@@ -263,7 +263,7 @@ export default function PatientAppointments() {
                     </div>
                     <button
                         onClick={() => setShowBookingForm(true)}
-                        className="flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200"
+                        className="flex items-center gap-2 !bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-200"
                     >
                         <Plus className="w-5 h-5" />
                         Đặt lịch khám mới
